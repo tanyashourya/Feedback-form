@@ -1,0 +1,191 @@
+*{
+  /*font-family: "Open Sans";*/
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+  margin-left: 0px;
+  }
+#heading{
+  font-size:55px;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Suez One', serif;
+  /*font-weight: bolder;*/
+}
+#result{
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+ margin-top: 0px;
+}
+#logo{
+  height: 100px; 
+  width: 100px;
+}
+#smiley_row{
+  margin-top: 7%;
+ margin-left: 31%;
+
+}
+textarea{
+  resize: none;
+}
+form#smileys input[type="radio"] {
+  -webkit-appearance: none;
+  width: 130px;
+  height: 130px;
+  border: none;
+  cursor: pointer;
+  transition: border .2s ease;
+  margin: 0 5px;
+  transition: all .2s ease;
+}
+/*form#smileys input[type="radio"].happy{
+  background: url("images/happy-02.png") center;
+  background-size: cover;
+}
+form#smileys input[type="radio"].neutral {
+   background: url("images/neutral-02.png") center;
+  background-size: cover;
+}
+form#smileys input[type="radio"].sad{
+  background: url("images/sad-02.png") center;
+  background-size: cover;
+}*/
+form#smileys input[type="radio"]:focus {
+  outline: 0;
+}
+form#smileys input[type="radio"].happy{
+  background: url("images/happy-01.png") center;
+  background-size: cover;
+}
+form#smileys input[type="radio"].neutral 
+ {
+  background: url("images/neutral-01.png") center;
+  background-size: cover;
+ }
+form#smileys input[type="radio"].sad{
+  background: url("images/sad-01.png") center;
+  background-size: cover;
+}
+form#smileys input[type="radio"].happy:checked{
+        background: url("images/happy-01.png") center;
+        background-size: cover;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;        
+        transform-origin: bottom;
+        animation-name: bounce-1;
+        animation-timing-function: ease;
+        width: 160px;
+        height: 160px;
+}
+form#smileys input[type="radio"].neutral:checked{
+        background: url("images/neutral-01.png") center;
+        background-size: cover;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-name: pulse;
+        animation-timing-function: ease;
+        width: 160px;
+        height: 160px;
+}
+form#smileys input[type="radio"].sad:checked{
+        background: url("images/sad-01.png") center;
+        background-size: cover;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: bottom;
+        animation-name: shake;
+        animation-timing-function: ease;
+        width: 160px;
+        height: 160px;
+}
+.rating {
+  font-size: 120px;
+  height: 170px;
+  line-height: 170px;
+}
+
+/*.rating1:before , .rating2:before , .rating3:before{
+  content: "😶";  
+  font-size: 120px;
+  height: 170px;
+  line-height: 170px;
+}
+.rating1:hover:before{
+  content: "☹️";   
+  font-size: 150px;
+  margin-left: -15px; 
+  position: absolute;
+}
+.rating2:hover:before ,.rating2:checked:before {
+  content: "😐";   
+  font-size: 150px;
+  margin-left: -15px;
+  position: absolute;
+}
+.rating3:hover:before{
+ content: "😄";
+  position: absolute;
+   font-size: 150px;
+   margin-left: -15px;
+     
+}
+.rating3:checked:before, .rating3:checked
+{
+        content: "😄";
+        font-size: 130px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;        
+        transform-origin: bottom;
+        animation-name: bounce-1;
+        animation-timing-function: ease;
+    }
+  
+  .rating1:checked:before, .rating1:checked{
+        content: "☹️";
+        font-size: 130px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: bottom;
+        animation-name: wobble;
+        animation-timing-function: ease;
+  }*/
+    @keyframes bounce-1 {
+        0%   { transform: translateY(0); }
+        30%  { transform: translateY(-50px); }
+        50%  { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+  @keyframes pulse {
+   0% { transform: scale(1); }
+   50% { transform: scale(1.15); }
+   100% { transform: scale(1); } 
+} 
+@keyframes wobble {
+   0% { transform: translateX(0%); } 
+   15% { transform: translateX(-7%) rotate(-5deg); } 
+   30% { transform: translateX(5%) rotate(3deg); } 
+   45% { transform: translateX(-7%) rotate(-3deg); } 
+   60% { transform: translateX(5%) rotate(2deg); }
+   75% { transform: translateX(-2%) rotate(-1deg); }
+   100% { transform: translateX(0%); } 
+} 
+@keyframes shake {
+   /*0%, 100% {transform: translateX(0);} 
+   10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+   20%, 40%, 60%, 80% {transform: translateX(10px);} */
+   0%, 100% {transform: translateX(0);} 
+   20%, 60%  {transform: translateX(-10px);} 
+   40%, 80% {transform: translateX(10px);} 
+} 
+.modal.fade{
+  opacity:1;
+}
+.modal.fade .modal-dialog {
+   -webkit-transform: translate(0);
+   -moz-transform: translate(0);
+   transform: translate(0);
+}

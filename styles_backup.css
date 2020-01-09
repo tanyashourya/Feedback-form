@@ -1,0 +1,122 @@
+*{
+  font-family: "Open Sans";
+}
+.container{
+  margin-left: 0px;
+  }
+#heading{
+  font-size:55px;
+  text-align: center;
+  margin-top: 15px
+}
+#logo{
+  height: 100px; 
+  width: 100px;
+}
+#smiley_row{
+  margin-top: 7%;
+  margin-left: 35%;
+}
+.smileys{
+  margin-left: 7%;
+}
+form#smileys input[type="radio"] {
+  -webkit-appearance: none;
+  width: 120px;
+  height: 120px;
+  border: none;
+  cursor: pointer;
+  transition: border .2s ease;
+  margin: 0 5px;
+  transition: all .2s ease;
+}
+form#smileys input[type="radio"]:hover, form#smileys input[type="radio"]:checked {
+ 
+ 
+          -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+}
+form#smileys input[type="radio"]:focus {
+  outline: 0;
+}
+form#smileys input[type="radio"].happy {
+  background: url("images/happy2.png") center;
+  background-size: cover;
+}
+form#smileys input[type="radio"].neutral {
+  background: url("images/neutral2.png") center;
+  background-size: cover;
+}
+form#smileys input[type="radio"].sad {
+  background: url("images/sad2.jpg") center;
+  background-size: cover;
+}
+.rating {
+  font-size: 120px;
+  height: 170px;
+  line-height: 170px;
+}
+
+.rating1:before , .rating2:before , .rating3:before{
+  content: "😶";  
+  font-size: 120px;
+  height: 170px;
+  line-height: 170px;
+}
+.rating1:hover:before,.rating1:checked:before{
+  content: "☹️";   
+  font-size: 150px;
+  margin-left: -15px;
+  -webkit-transform: rotate(15deg);
+  position: absolute;
+}
+.rating2:hover:before ,.rating2:checked:before {
+  content: "😐";   
+  font-size: 150px;
+  margin-left: -15px;
+  position: absolute;
+}
+.rating3:hover:before{
+   content: "😄";
+   position: absolute;
+   font-size: 150px;
+   margin-left: -15px;
+   -webkit-transform: rotate(-15deg);   
+}
+.rating3:checked:before, .rating3:checked
+{
+        content: "😄";
+        font-size: 130px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: bottom;
+        animation-name: bounce-1;
+        animation-timing-function: ease;
+    }
+  .rating2:checked:before, .rating2:checked{
+        content: "😐";
+        font-size: 130px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: bottom;
+        animation-name: bounce-1;
+        animation-timing-function: ease;
+    }
+  .rating1:checked:before, .rating1:checked{
+        content: "☹️";
+        font-size: 130px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: bottom;
+        animation-name: bounce-1;
+        animation-timing-function: ease;
+  }
+    @keyframes bounce-1 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-30px); }
+        100% { transform: translateY(0); }
+    }
